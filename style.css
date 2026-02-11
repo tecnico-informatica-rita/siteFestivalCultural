@@ -46,7 +46,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(252, 231, 250);
+    background-color: rgb(231, 231, 231);
 }
 
 .e2{
@@ -59,6 +59,346 @@ body {
 .descricao-menu {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
-    color:rgb(42, 39, 53);
+    color: black;
     cursor: pointer;
 }
+
+/* ----------------------------------- CARROSSEL -----------------------------*/
+
+.imagemInicial {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    width: 60%;
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    width: 500%;
+    animation: slide 20s infinite;
+    transition: transform 1s ease-in-out;
+    
+}
+.cards img{
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* animação */
+@keyframes slide {
+    0%   { transform: translateX(0); }
+    20%  { transform: translateX(0); }
+
+    25%  { transform: translateX(-20%); }
+    40%  { transform: translateX(-20%); }
+
+    45%  { transform: translateX(-40%); }
+    60%  { transform: translateX(-40%); }
+
+    65%  { transform: translateX(-60%); }
+    80%  { transform: translateX(-60%); }
+
+    85%  { transform: translateX(-80%); }
+    100% { transform: translateX(-80%); }
+}
+
+.text {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.text img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ----------------------------------- CONTEÚDO -----------------------------*/
+
+#conteudo1 {
+    background-color: black;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.frase_inicial {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.frase_inicial h1{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+
+.divulgacao {
+    display: flex;
+} 
+
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+}
+
+.imagem {
+    width: 80%;
+    height: auto;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+} 
+
+
+.card {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 30%;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(172, 172, 172);
+    
+}
+
+.card h1{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.card p{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botao-ingresso {
+    padding: 12px 25px;
+    background-color: #4a53fa;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao-ingresso:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    background-color: #2f36c9;
+}
+
+/* ----------------------------------- RODAPÉ -----------------------------*/
+#rodape{
+    display: flex;
+    background-color: rgb(248, 241, 255);
+    flex-direction: column;
+}
+#rodape-colunas {
+    display: flex;
+    justify-content: space-between;
+}
+#rodape h1{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+#rodape a:link, #rodape p, a:visited, .frase_inicial p {
+    color:rgb(142, 141, 141);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+#rodape a:hover {
+    color: rgb(49, 49, 49)
+}
+
+.colunas{
+    display:flex;
+    padding: 100px;
+    gap:10px;
+    flex-direction: column;
+}
+
+.frase_final {
+    margin-left: 100px;
+    margin-bottom:40px;
+    margin-top:60px;
+    margin-top: auto;
+    text-align: left;
+}
+
+#rodape hr {
+    border: none;
+    margin: 0 60px;
+    border-top: 1px solid rgb(0,0,0,0.1);
+    padding: 20px;
+}
+
+.imagens_redes {
+    display:flex;
+    gap:10px;
+}
+.imagens_redes img {
+    object-fit: contain;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+.imagens_redes img:hover {
+    filter: grayscale(100%) brightness(70%);
+}
+
+#logo_face {
+    width:24px;
+    height: 24px;
+}
+#logo_insta {
+    width: 25px;
+    height: 25px;
+}
+
+/* -------------------------------------- PÁGINA LGPD --------------------------------------------------- */
+.lgpd * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lgpd body {
+    background-image: url("../img/formulario.png");
+}
+
+#caixa {
+    margin: 4%;
+    background-color: white;
+    border-radius: 15px;
+    padding:25px;
+}
+
+#caixa h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: rgb(2, 35, 112);
+}
+
+#caixa h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color:rgb(38, 38, 154)
+}
+
+
+#caixa p, ul, li{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color:black;
+}
+
+#bloco1, #bloco2, #bloco3, #bloco4{
+    display:flex;
+    gap: 20px;
+    margin:2%
+}
+#galeria {
+    width:41%;
+    height:20%;
+    background-color: rgb(244, 242, 242);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#dados_coletados {
+    width:86%;
+    height:22%;
+    background-color: rgb(244, 242, 242);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#dados_terceiros {
+    margin-left:2%;
+    width:96%;
+    background-color: rgb(188, 188, 188);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#trat_dados {
+    flex:1.5;
+    background-color: rgb(244, 242, 242);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#prazos {
+    flex:1;
+    background-color: rgb(244, 242, 242);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#alteracoes {
+    flex:1;
+    background-color: rgb(244, 242, 242);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#comp, #titularidade {
+    background-color: rgb(188, 188, 188);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#cookies {
+    margin:2%;
+    background-color: rgb(244, 242, 242);;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#tipos {
+    flex:1.5;
+    background-color: rgb(188, 188, 188);
+    padding: 2%;
+    border-radius: 10px;
+}
+#uso, #gerenciar {
+    flex:1;
+    background-color: rgb(188, 188, 188);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+
+

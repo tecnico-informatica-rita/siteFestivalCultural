@@ -41,6 +41,74 @@ body {
     cursor: pointer;
 }
 
+/* ------------------------------ BARRA LATERAL ------------------------------------------------- */
+/* esconde checkbox */
+#menuToggle {
+    display: none;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -260px;   /* aparece pela direita */
+    width: 260px;
+    height: 100%;
+    background: #ffffff;
+    padding-top: 40px;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+/* links */
+.sidebar a {
+    display: block;
+    color: rgb(121, 121, 121);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background: #333;
+}
+
+/* abre sidebar */
+#menuToggle:checked + .header + .sidebar {
+    right: 0;
+}
+
+/* deixa cursor bonitinho */
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.logoBarra {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
+.estrelasBarra {
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 10px auto;
+    margin-top: 100px;
+}
+
 /* --------------------  MENU ----------------------------- */
 .menu {
     display: flex;
@@ -56,24 +124,30 @@ body {
     padding: 10px;
     gap: 10px;
 }
-.descricao-menu {
+.descricao-menu, a.descricao-menu {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     color: black;
     cursor: pointer;
+    text-decoration: none;
+}
+
+a.descricao-menu:hover {
+    text-decoration: underline;
+    color:#fe95f6;
 }
 
 /* ----------------------------------- CARROSSEL -----------------------------*/
 
 .imagemInicial {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     height: auto;
 }
 
 .slide {
-    width: 60%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -108,7 +182,7 @@ body {
     100% { transform: translateX(-80%); }
 }
 
-.text {
+/*.text {
     display: flex;
     width: 40%;
     justify-content: center;
@@ -118,7 +192,7 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-}
+}*/
 
 /* ----------------------------------- CONTEÚDO -----------------------------*/
 
@@ -237,7 +311,7 @@ body {
 /* ----------------------------------- RODAPÉ -----------------------------*/
 #rodape{
     display: flex;
-    background-color: rgb(248, 241, 255);
+    background-color: rgb(1, 1, 1);
     flex-direction: column;
 }
 #rodape-colunas {
@@ -245,7 +319,7 @@ body {
     justify-content: space-between;
 }
 #rodape h1{
-    color: black;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
 }
@@ -257,7 +331,7 @@ body {
 }
 
 #rodape a:hover {
-    color: rgb(49, 49, 49)
+    color: rgb(254, 251, 251)
 }
 
 .colunas{
@@ -278,7 +352,7 @@ body {
 #rodape hr {
     border: none;
     margin: 0 60px;
-    border-top: 1px solid rgb(0,0,0,0.1);
+    border-top: 1px solid rgb(213, 213, 213);
     padding: 20px;
 }
 
@@ -296,10 +370,12 @@ body {
 }
 
 #logo_face {
+    filter: invert(1);
     width:24px;
     height: 24px;
 }
 #logo_insta {
+    filter: invert(1);
     width: 25px;
     height: 25px;
 }

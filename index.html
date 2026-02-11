@@ -8,6 +8,8 @@
 </head>
     <body>
 
+        <input type="checkbox" id="menuToggle"> <!-- Necessário para esconder a barra lateral -->
+
         <!--
             ----------------------- CABEÇALHO ---------------------
         -->
@@ -23,8 +25,23 @@
             </div>
 
             <div class="header-direita">
-                <span class="menu-icon">☰</span>
+                <label for="menuToggle" class="menu-icon">☰</label>
             </div>
+        </div>
+
+        <!--
+            ----------------------- BARRA LATERAL ---------------------
+        -->
+        <div class="sidebar">
+
+            <label for="menuToggle" class="closeBtn">✕</label>
+            <img src="img/logo.png" class="logoBarra">
+            <a href="index.html">Home</a>
+            <a href="html/lineup.html">Line-up</a>
+            <a href="html/ingressos.html">Ingressos</a>
+            <a href="html/servicos.html">Serviços</a>
+            <a href="html/sobre.html">Sobre</a>
+            <img src="img/estrelas.png" class="estrelasBarra">
         </div>
 
         <!--
@@ -34,15 +51,15 @@
             <div class="e1"></div>
             <div class="e2">
                 <div class="line">
-                <h1 class="descricao-menu">Line-up</h1>
+                    <a class="descricao-menu" href="html/line-up">Line-up</a>
                 </div>
                 <div class="ingressos"></div>
-                <h1 class="descricao-menu">Ingressos</h1>
+                    <a class="descricao-menu" href="html/ingressos">Ingressos</a>
                 <div class="informacoes">
-                <h1 class="descricao-menu">Informações</h1>
+                    <a class="descricao-menu" href="html/informacoes">Informações</a>
                 </div>
                 <div class="servicos">
-                <h1 class="descricao-menu">Serviços</h1>
+                    <a class="descricao-menu" href="html/servicoes">Serviços</a>
                 </div>
             <div class="e3"></div>
             </div> 
@@ -53,9 +70,9 @@
         -->
         
         <div class="imagemInicial">
-            <div class="text">
+            <!--<div class="text">
                 <img src="img/frase4.png">
-            </div>
+            </div>-->
 
             <div class="slide">
                 <div class="cards">
@@ -130,12 +147,12 @@
             </div>
 
             <div class="pat1">
-                <p>Parceiros: </p>
-                <img src="img/pat5.png">
+                <p>Fornecedor: </p>
+                <img src="img/pat5.51.png">
             </div>
 
             <div class="pat1">
-                <p>Parceiros: </p>
+                <p>Realização: </p>
                 <img src="img/pat6.png">
             </div>
 
@@ -145,6 +162,7 @@
             ----------------------- RODAPÉ ---------------------
         -->
         <div id="rodape">
+            <hr>
             <div id="rodape-colunas">
                 <div class="colunas">
                     <h1>ÁREA DO CLIENTE</h1>

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/* --------------------  CABEÇALHO ----------------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(93, 43, 228);
+    padding:  18px 30px;
+}
+
+.logo {
+    width: 440px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.header-center, .header-esquerd, .header-direita {
+    display: flex;
+    justify-content: center;
+}
+
+.festival-dates, .menu-icon {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* --------------------  MENU ----------------------------- */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252, 231, 250);
+    gap: 30px;
+    padding: 10px;
+}
+
+.descricao-menu {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color:rgb(61, 56, 78);
+    cursor: pointer;
+}

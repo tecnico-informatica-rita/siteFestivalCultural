@@ -39,7 +39,7 @@ body {
 
 /* --------------------  MENU ----------------------------- */
 .menu {
-    display: flex;
+    display: -webkit-inline-flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(252, 231, 250);
@@ -47,6 +47,9 @@ body {
     padding: 10px;
 }
 
+.e1, .e2, .e3{
+    width: 33.3%;
+}
 .descricao-menu {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;

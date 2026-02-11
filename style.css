@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(93, 43, 228);
+    background-color: #4a53fa;
     padding:  18px 30px;
 }
 
@@ -25,9 +25,13 @@ body {
     cursor: pointer;
 }
 
-.header-center, .header-esquerd, .header-direita {
+.header-center, .header-esquerda, .header-direita {
     display: flex;
     justify-content: center;
+}
+
+.header-center {
+    margin-right: 100px;
 }
 
 .festival-dates, .menu-icon {
@@ -39,20 +43,22 @@ body {
 
 /* --------------------  MENU ----------------------------- */
 .menu {
-    display: -webkit-inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(252, 231, 250);
-    gap: 30px;
-    padding: 10px;
 }
 
-.e1, .e2, .e3{
-    width: 33.3%;
+.e2{
+    display: flex;
+    width: 400px;
+    margin-left:100px;
+    padding: 10px;
+    gap: 10px;
 }
 .descricao-menu {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
-    color:rgb(61, 56, 78);
+    color:rgb(42, 39, 53);
     cursor: pointer;
 }

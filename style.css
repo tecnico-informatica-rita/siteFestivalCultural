@@ -117,14 +117,32 @@ body {
     background-color: rgb(231, 231, 231);
 }
 
-.e2{
+/*.e2{
     display: flex;
     width: 400px;
     margin-left:100px;
     padding: 10px;
     gap: 10px;
+}*/
+
+.e2{
+    display: flex;
+    width: 1800px;
+    margin-left:10px;
+    padding: 10px;
+    gap: 10px;
 }
-.descricao-menu, a.descricao-menu {
+
+.e2 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    font-size: 25px;
+}
+
+.imagem2 img{
+    height: 650px;
+}
+/*.descricao-menu, a.descricao-menu {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     color: black;
@@ -135,7 +153,7 @@ body {
 a.descricao-menu:hover {
     text-decoration: underline;
     color:#fe95f6;
-}
+}*/
 
 /* ----------------------------------- CARROSSEL -----------------------------*/
 

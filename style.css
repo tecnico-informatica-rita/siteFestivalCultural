@@ -160,8 +160,9 @@ a.descricao-menu:hover {
 .imagemInicial {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 60%;
     height: auto;
+    margin-bottom: 50px;
 }
 
 .slide {
@@ -200,7 +201,7 @@ a.descricao-menu:hover {
     100% { transform: translateX(-80%); }
 }
 
-/*.text {
+.text {
     display: flex;
     width: 40%;
     justify-content: center;
@@ -210,7 +211,7 @@ a.descricao-menu:hover {
     width: 100%;
     height: auto;
     object-fit: cover;
-}*/
+}
 
 /* ----------------------------------- CONTEÚDO -----------------------------*/
 

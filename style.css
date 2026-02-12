@@ -22,7 +22,7 @@ body {
     width: 440px;
     height: auto;
     display: block;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .header-center, .header-esquerda, .header-direita {
@@ -38,7 +38,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     color: white;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 /* ------------------------------ BARRA LATERAL ------------------------------------------------- */
@@ -159,14 +159,14 @@ a.descricao-menu:hover {
 
 .imagemInicial {
     display: flex;
-    justify-content: center;
-    width: 60%;
+    justify-content: flex-end;
+    width: 100%;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .slide {
-    width: 100%;
+    width: 60%;
     overflow: hidden;
 }
 
@@ -179,8 +179,9 @@ a.descricao-menu:hover {
 }
 .cards img{
     width: 20%;
-    height: auto;
+    height: 700px;
     object-fit: cover;
+    object-position: center;
 }
 
 /* animação */
@@ -201,17 +202,28 @@ a.descricao-menu:hover {
     100% { transform: translateX(-80%); }
 }
 
-.text {
+.texto {
     display: flex;
-    width: 40%;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
-.text img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.frase_fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.botao_fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
 
 /* ----------------------------------- CONTEÚDO -----------------------------*/
 
@@ -278,7 +290,7 @@ a.descricao-menu:hover {
     font-size: 25px;
 }
 
-.card p{
+.card p, .frase_fotos p{
     color: white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -398,6 +410,9 @@ a.descricao-menu:hover {
     width: 25px;
     height: 25px;
 }
+
+/* ----------------------------------- PÁGINA RECORDAÇÕES -------------------------------------------- */
+
 
 /* -------------------------------------- PÁGINA LGPD --------------------------------------------------- */
 .lgpd * {
